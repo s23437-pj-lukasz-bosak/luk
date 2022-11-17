@@ -13,7 +13,7 @@ public class LukApplication {
 		// to jest nasz main od dzisiaj
 
 		System.out.println(carService.getAllCars());
-		System.out.println(carService.getAllRentals()); // jeszcze dodac to to string to smierdzace enum. pamietac
+		System.out.println(carService.getAllRentals());
 
 
 
