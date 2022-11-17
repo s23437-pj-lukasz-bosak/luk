@@ -5,22 +5,21 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class LukApplication {
-		private final CarService carService;
+    private final CarService carService;
 
-	public LukApplication(CarService carService){
-		this.carService = carService;
+    public LukApplication(CarService carService) {
+        this.carService = carService;
 
-		// to jest nasz main od dzisiaj
+        // to jest nasz main od dzisiaj
 
-		System.out.println(carService.getAllCars());
-		System.out.println(carService.getAllRentals());
+        System.out.println(carService.getAllCars());
+        System.out.println(carService.getAllRentals());
 
 
+    }
 
-	}
-
-	public static void main(String[] args) {
-		SpringApplication.run(LukApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(LukApplication.class, args);
+    }
 
 }
